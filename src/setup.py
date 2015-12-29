@@ -14,6 +14,6 @@ setup(name="pyelas",
       ext_modules=[Extension("_elas",
                              sources=["descriptor.cpp", "elas.cpp", "filter.cpp", "matrix.cpp", "triangle.cpp", "elas.i"],
                              language="c++",
-                             swig_opts=['-c++','-thread'],
+                             swig_opts=['-c++','-threads'],
                              extra_compile_args=['-msse3'],
                              include_dirs=[numpy.get_include()])])

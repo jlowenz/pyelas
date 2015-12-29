@@ -9,7 +9,7 @@
 %feature("autodoc","0");
 
 // handle numpy
-%include "numpy.i"
+%include numpy.i
 %init %{
   import_array();
 %}
