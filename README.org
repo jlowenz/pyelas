@@ -24,4 +24,4 @@ You should then be able to run =demo.py <path to left> <path to right>=, or iPyt
 
 * License
 
-=libelas= is licensed under the GPL, therefore this software is under the GPL as well. Please see the [[https://github.com/jlowenz/pyelas/blob/master/readme.txt][original readme]] for more information.
+=libelas= is licensed under the GPL, therefore this software is under the GPL as well. Please see the [[https://github.com/jlowenz/pyelas/blob/master/README.TXT][original readme]] for more information.
