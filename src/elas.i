@@ -3,6 +3,7 @@
 %{
 #define SWIG_FILE_WITH_INIT
 #include "elas.h"
+#include "ccomp.h"
 %}
 
 %feature("flatnested");
@@ -25,9 +26,12 @@
      (unsigned char* image2, int rows2, int cols2)}
 %apply (float* INPLACE_ARRAY2, int DIM1, int DIM2) { (float* disp1, int drows1, int dcols1),
      (float* disp2, int drows2, int dcols2)}
+%apply (float* IN_ARRAY2, int DIM1, int DIM2) { (float* disp, int drows, int dcols) }
+%apply (int* INPLACE_ARRAY2, int DIM1, int DIM2) { (int* out_labels, int lrows, int lcols) }
 
 typedef int int32_t;
 %include "elas.h"
+%include "ccomp.h"
 
 %ignore Elas::process;
 %extend Elas {
