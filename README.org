@@ -1,0 +1,27 @@
+* Overview
+
+=pyelas= is a thin SWIG Python wrapping of the efficient large-scale stereo matching library, [[http://www.cvlibs.net/software/libelas/][libelas]].
+
+* Status
+
+The [[https://github.com/jlowenz/pyelas/blob/master/src/demo.py][demo.py]] script works; passing two stereo image paths on the command line will display the resulting disparity map.
+
+* Getting Started
+
+Download the repository and enter the =src= directory.
+
+  $ git clone http://github.com/jlowenz/pyelas.git
+  
+  $ cd src 
+  
+  $ python setup.py build_ext -i
+
+You should then be able to run =demo.py <path to left> <path to right>=, or iPython and =import elas=. 
+
+* Requirements
+
+=pyelas= requires SWIG 3.0, Python (2.7), and numpy.
+
+* License
+
+=libelas= is licensed under the GPL, therefore this software is under the GPL as well. Please see the [[https://github.com/jlowenz/pyelas/blob/master/README.TXT][original readme]] for more information.
