@@ -26,6 +26,7 @@
 %apply (float* INPLACE_ARRAY2, int DIM1, int DIM2) { (float* disp1, int drows1, int dcols1),
      (float* disp2, int drows2, int dcols2)}
 
+typedef int int32_t;
 %include "elas.h"
 
 %ignore Elas::process;
