@@ -1,1 +1,5 @@
 *~
+*build/
+src/elas.py
+src/elas.pyc
+src/elas_wrap.cpp
