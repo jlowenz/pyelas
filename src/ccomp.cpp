@@ -77,7 +77,7 @@ int compute_connected_components(float* disp, int drows, int dcols,
     }
   }
   // relabel roots
-  int k = 0;
+  int k = 1;
   for (int i = 0; i < num_pixels; ++i) {
     if (comps[i].is_root()) {
       comps[i].rank = k++;

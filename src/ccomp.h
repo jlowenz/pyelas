@@ -47,7 +47,7 @@ struct ufroot
 
   inline bool is_root() const
   {
-    return parent == this;
+    return parent == this && rank != 0;
   }
 };
 
