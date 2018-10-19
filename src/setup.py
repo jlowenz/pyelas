@@ -16,5 +16,5 @@ setup(name="pyelas",
                                       "ccomp.cpp", "elas.i"],
                              language="c++",
                              swig_opts=['-c++','-threads'],
-                             extra_compile_args=['-msse3','-g'],
+                             extra_compile_args=['-msse3'],
                              include_dirs=[numpy.get_include()])])
